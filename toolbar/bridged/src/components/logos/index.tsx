@@ -20,6 +20,7 @@ import GithubCopilotLogoImg from './github_copilot.png';
 import TraeLogoImg from './trae.png';
 import KilocodeLogoImg from './kilocode.png';
 import ClaudeCodeLogoImg from './claude.png';
+import LingmaLogoImg from './lingma.png';
 
 // Export PNG logos
 export {
@@ -32,6 +33,7 @@ export {
   RooCodeLogoImg,
   GithubCopilotLogoImg,
   TraeLogoImg,
+  LingmaLogoImg,
 };
 
 export interface LogoProps extends React.SVGProps<SVGSVGElement> {

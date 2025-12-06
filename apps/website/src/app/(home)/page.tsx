@@ -894,16 +894,12 @@ export default function Home() {
 
                 <h1 className="mb-6 font-bold text-3xl tracking-tight md:text-5xl">
                   <span className="bg-gradient-to-br from-zinc-800 via-zinc-900 to-black bg-clip-text text-transparent dark:from-zinc-100 dark:via-zinc-300 dark:to-white">
-                    The frontend coding agent for
-                    <br />
-                    real codebases
+                    Welcome to Stagewise
                   </span>
                 </h1>
                 <div className="flex justify-center">
                   <p className="mb-8 max-w-3xl text-center text-lg text-zinc-600 dark:text-zinc-400">
-                    stagewise runs locally, lives inside your browser and lets
-                    you edit the frontend of your existing project simply by
-                    selecting elements and prompting changes.
+                    Transform your development workflow with AI-powered tools designed for modern teams.
                   </p>
                 </div>
 

@@ -53,6 +53,7 @@ import {
   RooCodeLogoImg,
   GithubCopilotLogoImg,
   KilocodeLogoImg,
+  LingmaLogoImg,
 } from '@/components/logos';
 
 const agentStateToText: Record<AgentStateType, string> = {
@@ -97,6 +98,7 @@ const getAgentLogo = (name: string, description: string): string | null => {
   if (searchText.includes('github') || searchText.includes('copilot'))
     return GithubCopilotLogoImg;
   if (searchText.includes('claude')) return ClaudeCodeLogoImg;
+  if (searchText.includes('lingma')) return LingmaLogoImg;
 
   return null;
 };

@@ -11,6 +11,8 @@ import { callKilocodeAgent } from './call-kilocode-agent';
 import * as vscode from 'vscode';
 import { isClineInstalled } from './is-cline-installed';
 import { callTraeAgent } from './call-trae-agent';
+import { callLingmaAgent } from './call-lingma-agent';
+import { isLingmaInstalled } from './is-lingma-installed';
 
 export async function dispatchAgentCall(request: {
   prompt: string;
@@ -29,6 +31,7 @@ export async function dispatchAgentCall(request: {
       if (isClineInstalled()) return await callClineAgent(request);
       if (isRoocodeInstalled()) return await callRoocodeAgent(request);
       if (isKilocodeInstalled()) return await callKilocodeAgent(request);
+      if (isLingmaInstalled()) return await callLingmaAgent(request);
       if (isCopilotChatInstalled()) return await callCopilotAgent(request);
       else {
         vscode.window.showErrorMessage(

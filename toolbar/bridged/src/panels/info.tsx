@@ -15,6 +15,7 @@ import {
   GithubCopilotLogoImg,
   KilocodeLogoImg,
   ClaudeCodeLogoImg,
+  LingmaLogoImg,
 } from '@/components/logos';
 import { Button } from '@/components/ui/button';
 import { useAgents } from '@/hooks/agent/use-agent-provider';
@@ -91,6 +92,13 @@ const agents: Agent[] = [
     logo: KilocodeLogoImg,
     appName: 'code',
   },
+  {
+    id: 'lingma',
+    name: 'Lingma',
+    domain: 'https://lingma.aliyun.com/',
+    logo: LingmaLogoImg,
+    appName: 'code',
+  },
 ];
 
 function getAgentExtensionUrl(agent: Agent) {
@@ -98,6 +106,7 @@ function getAgentExtensionUrl(agent: Agent) {
     case 'cline':
     case 'roocode':
     case 'copilot':
+    case 'lingma':
     case 'kilocode':
       return 'vscode:extension/stagewise.stagewise-vscode-extension';
     default:
